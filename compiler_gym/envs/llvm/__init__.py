@@ -50,7 +50,7 @@ LLVM_SERVICE_BINARY = runfiles_path(
 def _register_llvm_gym_service():
     """Register an environment for each combination of LLVM
     observation/reward/benchmark."""
-    observation_spaces = {"autophase": "Autophase", "ir": "Ir"}
+    observation_spaces = {"autophase": "Autophase", "ir": "Ir", "ir2vec_flowaware": "Ir2vecFlowAware", "ir2vec_symbolic": "Ir2vecSymbolic", "ir2vec_funclevel_flowaware": "Ir2vecFunctionLevelFlowAware", "ir2vec_funclevel_symbolic": "Ir2vecFunctionLevelSymbolic"}
     reward_spaces = {"ic": "IrInstructionCountOz", "codesize": "ObjectTextSizeOz"}
 
     register(
